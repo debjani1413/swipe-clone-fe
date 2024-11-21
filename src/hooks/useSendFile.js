@@ -9,7 +9,7 @@ export const useSendFile = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:10000/upload', {
+      const response = await fetch('https://swipe-arsv6drc1-debjani1413s-projects.vercel.app/upload', {
         method: 'POST',
         body: formData,
       });
