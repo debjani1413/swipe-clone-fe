@@ -9,7 +9,7 @@ export const useSendFile = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('https://swipe-clone-204835xnv-debjani1413s-projects.vercel.app/upload', {
+      const response = await fetch('https://swipe-clone-bfxmb6tww-debjani1413s-projects.vercel.app/upload', {
         method: 'POST',
         body: formData,
       });
