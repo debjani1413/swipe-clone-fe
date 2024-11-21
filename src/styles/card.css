@@ -1,0 +1,40 @@
+.info-img {
+    height: 20rem;
+    width: 25rem;
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    width: 65rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body {
+    height: 20rem;
+    width: fit-content;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    margin-top: -1rem;
+    color: gray;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-weight: 500;
+}

@@ -1,0 +1,10 @@
+.tab-container {
+    width: 95vw;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  

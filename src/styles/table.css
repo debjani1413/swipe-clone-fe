@@ -1,0 +1,78 @@
+/* Table Container */
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  }
+  
+  /* Styled Table */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    border-spacing: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Head */
+  .styled-table thead tr {
+    background-color: #e5e6e6;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Table Rows */
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .styled-table tbody tr {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light grey for alternate rows */
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #e3f2fd; /* Light blue hover effect */
+  }
+  
+  /* Table Borders */
+  .styled-table th {
+    border-bottom: 2px solid #d9d9d9;
+  }
+  
+  .styled-table td {
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .missing-field {
+    background-color: #ffeded;
+    border: 1px solid #ff4d4d;
+    position: relative;
+  }
+  
+  .missing-field .tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4d4d;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+
+  
