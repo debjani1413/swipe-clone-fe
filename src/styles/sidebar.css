@@ -1,43 +1,37 @@
 .sidebar {
-    width: 200px;
-    height: 91vh;
-    padding: 10px 0 0 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  width: 200px;
+  height: 91vh;
+  padding: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .tabs {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    font-size: 15px;
-    color: grey; 
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 15px;
+  color: grey;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .icon {
-    height: 15px;
-    width: 15px;
+  height: 15px;
+  width: 15px;
 }
 
 .tabs:hover {
-    background-color: #ebe9e9;
+  background-color: #ebe9e9;
 }
 
-/* .tabs.active {
-    color: black; 
-    font-weight: bold;
-    background-color: #e0e0e0; 
-} */
-
 .bottom-tabs {
-    margin-top: auto; 
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  margin-top: auto;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }

@@ -1,9 +1,10 @@
 import { useDispatch } from "react-redux";
-import { setUploadMessage } from "../redux/uploadSlice";
+import { setLoading } from "../redux/loadSlice";
 import { useSendFile } from "./useSendFile"; // Reuse the `useSendFile` hook
 
 export const useFileChange = () => {
   const dispatch = useDispatch();
+
   const sendFile = useSendFile(); // Use the sendFile logic
 
   const handleFileChange = (event) => {
@@ -11,13 +12,10 @@ export const useFileChange = () => {
     if (file) {
       console.log("File selected:", file);
 
+      dispatch(setLoading(true));
+
       // Call the sendFile function from the hook
       sendFile(file);
-
-      // Simulate a delay for setting the upload message
-      // setTimeout(() => {
-      //   dispatch(setUploadMessage(`File "${file.name}" uploaded successfully!`));
-      // }, 1000);
     }
   };
 

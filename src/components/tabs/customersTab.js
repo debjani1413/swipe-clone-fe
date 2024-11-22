@@ -18,25 +18,25 @@ const CustomersTab = () => {
   ];
 
   // Transform table data for Create tab
-  const customerTableData = tableData.map((item,index) => {
+  const customerTableData = tableData.map((item, index) => {
     return {
-    invoiceId: index+1 || "N/A",
-    customerName: item.CustomerName,
-    phnNumber: item.PhoneNumber,
-    cmpName: item.CompanyName,
-    email: item.Email,
-    Amount: item.TotalAmount,
-    totalamount: item.AmountPayable,
-    date: item.Date,
-    }
+      invoiceId: item.SerialNumber || index + 1,
+      customerName: item.CustomerName,
+      phnNumber: item.PhoneNumber,
+      cmpName: item.CompanyName,
+      email: item.Email,
+      Amount: item.TotalAmount,
+      totalamount: item.AmountPayable,
+      date: item.Date,
+    };
   });
 
   return (
-    <Tab 
-    title={"Customers"}
-    buttonText={"Add Customers"}
-    columns={customerColumns}
-    tabledata={customerTableData}
+    <Tab
+      title={"Customers"}
+      buttonText={"Add Customers"}
+      columns={customerColumns}
+      tabledata={customerTableData}
     />
   );
 };

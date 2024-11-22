@@ -2,9 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Tab from "./tab";
 
-
 const InvoicesTab = () => {
-
   const tableData = useSelector((state) => state.upload.tableData);
 
   // Define Create-specific columns
@@ -21,8 +19,8 @@ const InvoicesTab = () => {
   ];
 
   // Transform table data for Create tab
-  const invoiceTableData = tableData.map((item,index) => ({
-    invoiceId: index+1 || "N/A",
+  const invoiceTableData = tableData.map((item, index) => ({
+    invoiceId: item.SerialNumber || index + 1,
     customerName: item.CustomerName,
     productName: item.ProductName,
     Qty: item.Quantity,
@@ -30,15 +28,16 @@ const InvoicesTab = () => {
     Tax: item.Tax,
     Amount: item.TotalAmount,
     totalamount: item.AmountPayable,
-    date: item.Date
+    date: item.Date,
   }));
 
   return (
-    <Tab 
-    title={"Invoices"}
-    buttonText={"Add Invoice"}
-    columns={invoiceColumns}
-    tabledata={invoiceTableData} />
+    <Tab
+      title={"Invoices"}
+      buttonText={"Add Invoice"}
+      columns={invoiceColumns}
+      tabledata={invoiceTableData}
+    />
   );
 };
 

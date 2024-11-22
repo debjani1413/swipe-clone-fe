@@ -1,13 +1,13 @@
 .banner {
-    height: 2rem;
-    width: 80vw;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 17px;
-    margin-left: 17px;
-    font-weight: bold;
-    background-color: #E6F2FF;
+  height: 2rem;
+  width: 80vw;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+  margin-left: 17px;
+  font-weight: bold;
+  background-color: #e6f2ff;
 }

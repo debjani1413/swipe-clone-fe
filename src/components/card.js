@@ -1,11 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdd, faHeadset, faVideo } from "@fortawesome/free-solid-svg-icons";
+import CardHeader from "./cardHeader";
 import Button from "./button";
 import infoImg from "../images/sales.webp";
 import "../styles/card.css";
-import CardHeader from "./cardHeader";
-import { useNavigate } from "react-router-dom";
 
 const Card = ({ header, subHeader, buttonText, infoData }) => {
   const navigate = useNavigate();

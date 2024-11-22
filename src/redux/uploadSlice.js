@@ -1,9 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const uploadSlice = createSlice({
-  name: 'upload',
+  name: "upload",
   initialState: {
-    uploadMessage: '',
+    uploadMessage: "",
     uploadResponse: null,
     tableData: [],
   },
