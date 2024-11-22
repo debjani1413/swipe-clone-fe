@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      {!shouldHideLayout && <Navbar />}
+      <Navbar />
       <div className="main-container">
         {!shouldHideLayout && <Sidebar />}
         <div className="sub-container">
