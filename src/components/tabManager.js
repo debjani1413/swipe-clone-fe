@@ -1,22 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setActiveTab } from "../redux/activeSlice";
 import InvoicesTab from "./tabs/invoiceTab";
 import ProductsTab from "./tabs/productsTab";
 import CustomersTab from "./tabs/customersTab";
-import Button from "./button"; // Import the Button component
-import "../styles/tabManager.css"; // Add your own styling
+import Button from "./button"; 
+import "../styles/tabManager.css"; 
+
 
 const TabManager = () => {
-  // State to manage the active tab
-  const [activeTab, setActiveTab] = useState("invoice");
+
+  const dispatch = useDispatch();
+  const activeTab = useSelector((state) => state.active.activeTab);
 
   // Function to change the active tab
   const handleTabClick = (tab) => {
-    setActiveTab(tab);
+    dispatch(setActiveTab(tab));
   };
 
   return (
     <div className="tab-container">
-      {/* Tab navigation */}
       <div className="tabs">
         <Button
           text="Invoice"
