@@ -10,7 +10,7 @@ export const useSendFile = () => {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:5001/upload", {
+      const response = await fetch("https://swipe-clone-be.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
