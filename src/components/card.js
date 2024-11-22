@@ -37,6 +37,7 @@ const Card = ({ header, subHeader, buttonText, infoData }) => {
             text={buttonText}
             icon={<FontAwesomeIcon icon={faAdd} />}
             onClick={handleButtonClick}
+            className={"add-button"}
           />
           <div className="info-item">
             <FontAwesomeIcon icon={faHeadset} /> <span>Talk to specialist</span>
